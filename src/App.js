@@ -23,10 +23,22 @@ function App() {
     });
 
     setBooks(updatedBookList);
+  };
+
+  const editBookById = (newTitle, id) => {
+    const newBooks = books.map((book) => {
+      if (book.id === id) {
+        return {...book, title: newTitle}
+      }
+      return book;
+    });
+
+    setBooks(newBooks)
   }
   return (
     <div className='app'>
-      <BookList books={books} deleteBookById={deleteBookById}/>
+      <h1>Reading List</h1>
+      <BookList books={books} remove={deleteBookById} onEdit={editBookById}/>
       <BookCreate createBook={createBook} />
     </div>
   )
