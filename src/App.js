@@ -38,7 +38,7 @@ function App() {
   return (
     <div className='app'>
       <h1>Reading List</h1>
-      <BookList books={books} remove={deleteBookById} onEdit={editBookById}/>
+      <BookList books={books} remove={deleteBookById} edit={editBookById}/>
       <BookCreate createBook={createBook} />
     </div>
   )
