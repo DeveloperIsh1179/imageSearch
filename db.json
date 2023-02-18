@@ -1,10 +1,6 @@
 {
   "books": [
     {
-      "title": "Bridge Book Test 4",
-      "id": 1
-    },
-    {
       "title": "test 2",
       "id": 2
     }
