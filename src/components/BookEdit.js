@@ -19,7 +19,6 @@ function BookEdit({ book, edit }) {
       <input className='input' 
         value={title} 
         onChange={handleChange}
-        placeholder={title}
       />
       <button className='button is-primary'>
         Save
